@@ -13,18 +13,18 @@
 
     <Grid Margin="10">
 
-        <!-- ===================== -->
-        <!-- レイアウト定義 -->
-        <!-- ===================== -->
+        
+        
+        
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <!-- パス -->
+            
             <RowDefinition Height="Auto"/>
-            <!-- 検索 -->
+            
             <RowDefinition Height="*"/>
-            <!-- メイン -->
+            
             <RowDefinition Height="Auto"/>
-            <!-- 下部 -->
+            
         </Grid.RowDefinitions>
 
         <Grid.ColumnDefinitions>
@@ -32,9 +32,9 @@
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
-        <!-- ===================== -->
-        <!-- ファイルパス -->
-        <!-- ===================== -->
+        
+        
+        
         <Border Grid.Row="0" Grid.ColumnSpan="2"
         CornerRadius="15"
         Background="#2E2E2E"
@@ -49,7 +49,7 @@
                     <ColumnDefinition Width="Auto" />
                 </Grid.ColumnDefinitions>
 
-                <!-- テキストボックス -->
+                
                 <TextBox Name="FilePathTextBox"
                  Grid.Column="0"
                  Background="Transparent"
@@ -59,7 +59,7 @@
                  FontSize="14"
                  Text="Select a Folder"/>
 
-                <!-- ファイル選択ボタン -->
+                
                 <Button x:Name="DirSelectButton" Grid.Column="1"
         Background="Transparent"
         BorderBrush="Transparent"
@@ -79,10 +79,6 @@
             </Grid>
         </Border>
 
-
-        <!-- ===================== -->
-        <!-- 検索エリア -->
-        <!-- ===================== -->
         <Grid Grid.Row="1" Grid.ColumnSpan="2" Margin="0,10,0,0">
 
             <Grid.ColumnDefinitions>
@@ -91,7 +87,6 @@
                 <ColumnDefinition Width="1.5*"/>
             </Grid.ColumnDefinitions>
 
-            <!-- Skin検索 -->
             <Border Grid.Column="0"
                     CornerRadius="15"
                     Background="#2E2E2E"
@@ -109,7 +104,6 @@
                          Text="Search..."/>
             </Border>
 
-            <!-- NoArmor -->
             <Border Grid.Column="1"
                     CornerRadius="15"
                     Background="#2E2E2E"
@@ -125,7 +119,6 @@
                           VerticalAlignment="Center"/>
             </Border>
 
-            <!-- Anim検索 -->
             <Border Grid.Column="2"
                     CornerRadius="15"
                     Background="#2E2E2E"
@@ -144,9 +137,6 @@
 
         </Grid>
 
-        <!-- ===================== -->
-        <!-- 左：Skinリスト -->
-        <!-- ===================== -->
         <Border Grid.Row="2" Grid.Column="0"
                 Margin="0,10,5,0"
                 CornerRadius="15"
@@ -206,9 +196,9 @@
             </ListBox>
         </Border>
 
-        <!-- ===================== -->
-        <!-- 右：Configリスト -->
-        <!-- ===================== -->
+        
+        
+        
         <Border Grid.Row="2" Grid.Column="1"
                 Margin="5,10,0,0"
                 CornerRadius="15"
@@ -266,9 +256,9 @@
             </ListBox>
         </Border>
 
-        <!-- ===================== -->
-        <!-- 下部 -->
-        <!-- ===================== -->
+        
+        
+        
         <Grid Grid.Row="3">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>

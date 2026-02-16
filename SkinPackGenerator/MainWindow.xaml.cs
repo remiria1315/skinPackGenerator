@@ -12,8 +12,7 @@ using System.IO;
 using System.IO.Compression;
 using System.Text.Json;
 using System.Text.Encodings.Web;
-using System.Diagnostics; // ブラウザ起動用
-
+using System.Diagnostics; 
 namespace SkinPackGenerator
 {
     public partial class MainWindow : Window
@@ -68,8 +67,7 @@ namespace SkinPackGenerator
             SetupPlaceholder(SearchTextBox, "Search...");
             SetupPlaceholder(AnimSearchTextBox, "Search...");
 
-            // 初期フォルダ（デスクトップなど）
-            string initial = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
+                        string initial = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             FilePathTextBox.KeyDown += (s, e) =>
             {
                 if (e.Key == Key.Enter)
@@ -149,8 +147,7 @@ namespace SkinPackGenerator
         {
             if (SkinListBox.SelectedItem is SkinItem item && item.IsFolder)
             {
-                SkinListBox.SelectedItems.Clear();   // ← 追加
-                FilePathTextBox.Text = item.FullPath;
+                SkinListBox.SelectedItems.Clear();                   FilePathTextBox.Text = item.FullPath;
                 LoadFolder(item.FullPath);
             }
         }

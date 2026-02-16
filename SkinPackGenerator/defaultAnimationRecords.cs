@@ -4,7 +4,6 @@ namespace SkinPackGenerator
 {
     public static class DefaultAnimationRecords
     {
-        // Ã“I‚È“Ç‚İæ‚èê—p«‘‚Æ‚µ‚Ä’è‹`
         public static readonly Dictionary<string, string> Values = new Dictionary<string, string>
 {
                 { "root", "controller.animation.player.root" },
